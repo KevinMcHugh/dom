@@ -1,4 +1,6 @@
 require 'rspec'
+require_relative '../lib/kingdom.rb'
+require_relative '../lib/pile.rb'
 require_relative '../lib/turn.rb'
 
 RSpec.configure do |config|

@@ -1,0 +1,3 @@
+class ProvinceCard
+
+end
