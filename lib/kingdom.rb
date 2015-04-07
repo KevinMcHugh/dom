@@ -8,8 +8,10 @@ class Kingdom
     piles_by_type[:province] = province
   end
 
-  def get_card(card_type)
+  def give_card(player, card_type)
     pile = piles_by_type[card_type]
+    card = pile.take
+    player.gain_card(card)
     if pile.empty?
       raise GameOverException
     end
